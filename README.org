@@ -1,0 +1,9 @@
+#+TITLE: emacs-xo
+
+This is a simple package to auto save and run [[https://github.com/xojs/xo][xo]]
+
+** Usage
+Enable the mode
+#+begin_src
+M-x emacs-xo/compile-on-save-mode
+#+end_src
