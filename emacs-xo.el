@@ -43,4 +43,4 @@
               (add-hook 'after-save-hook 'emacs-xo/compile-on-save-start nil t))
     (kill-local-variable 'after-save-hook)))
 
-(provide 'emacs-xo')
+(provide 'emacs-xo)
