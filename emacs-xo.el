@@ -26,7 +26,6 @@
 ;;; Code:
 
 (require 'compile)
-(provide 'emacs-xo')
 
 (defun emacs-xo/compile-on-save-start ()
   (setq compile-command (concat "xo --fix " (buffer-file-name)))
@@ -43,3 +42,5 @@
       (progn  (make-local-variable 'after-save-hook)
               (add-hook 'after-save-hook 'emacs-xo/compile-on-save-start nil t))
     (kill-local-variable 'after-save-hook)))
+
+(provide 'emacs-xo')

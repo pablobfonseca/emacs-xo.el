@@ -1,6 +1,14 @@
-#+TITLE: emacs-xo
+#+TITLE: emacs-xo.el
 
-This is a simple package to auto save and run [[https://github.com/xojs/xo][xo]]
+This is a poor man's package to auto save and run [[https://github.com/xojs/xo][xo]]
+
+** Install
+*** Using straight.el and use-package
+#+begin_src emacs-lisp
+  (use-package emacs-xo
+    :straight '(emacs-xo :host github
+                         :repo "pablobfonseca/emacs-xo.el"))
+#+end_src
 
 ** Usage
 Enable the mode
@@ -8,10 +16,3 @@ Enable the mode
 M-x emacs-xo/compile-on-save-mode
 #+end_src
 
-** Install
-*** Using straight.el
-#+begin_src emacs-lisp
-  (use-package emacs-xo
-    :straight '(emacs-xo :host github
-                         :repo "pablobfonseca/emacs-xo.el"))
-#+end_src
